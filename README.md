@@ -1,16 +1,14 @@
-# Online Markdown Converter
+The WeChat public number does not support markdown editors, 
+but most of the time markdown editors are used
+So this editor is for your own convenience and yours.
+Some changes have been made this editor is based on 
+https://github.com/barretlee/online-markdown/
 
-A online markdown converter specially for Wechat Public formatting.
+微信公众号不支持markdown编辑器,但是平时大部分使用的都是markdown编辑器
+所以为了方便自己和大家提供这个编辑器。
+这个编辑器是基于https://github.com/barretlee/online-markdown/ 做了一些改动
 
-- Online Address: <http://md.barretlee.com/>
-- Issue & Suggestion: <https://github.com/barretlee/online-markdown/issues/new>
 
-### Changelog
 
-- 支持更换代码样式主题
-- 代码长度溢出时横向滚动
-
-### LICENSE
-
-MIT. Thanks for @Phodal.
-"# online-markdown" 
+URL:http://www.haha174.top:8086/markdown/
+  
