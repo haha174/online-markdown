@@ -15412,23 +15412,13 @@ var OnlineMarkdown = {
     var $convert = $('.convert-button');
     $convert.on('click', function() {
       var $this = $(this);
-      if (self.currentState === 'preview') {
-        self.currentState = 'edit';
+       self.currentState = 'edit';
         $this.text('预览');
-        $copy.hide();
-        $('#input').fadeIn();
-        $('#output').hide();
-      } else {
-        self.currentState = 'preview';
-        $this.text('编辑');
         $copy.show();
-        $('#input').fadeOut();
+        $('#input').show();
         $('#output').show();
-      }
     });
-    if (params.preview) {
-      $convert.trigger('click');
-    }
+   $convert.trigger('click');
   },
 
   updateOutput: function () {

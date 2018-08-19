@@ -16,29 +16,26 @@
 <div class="topheader">
   <a href="http://md.barretlee.com"><h1>WXMarkdown</h1></a>
   <span>微信公众号格式化工具</span>
-  <ul>
-    <li class="forkbtn"><a href="https://github.com/barretlee/online-markdown" target="_blank">源码地址</a></li>
-    <li class="forkbtn"><a href="https://github.com/barretlee/online-markdown/issues/new" target="_blank">提需求</a></li>
-    <li><a href="http://www.barretlee.com/" target="_blank">关于小胡子哥</a></li>
-    <li><iframe allowtransparency="true" frameborder="0" scrolling="0" width="90px" height="20px" class="github-star" src="http://ghbtns.com/github-btn.html?user=barretlee&amp;repo=online-markdown&amp;type=watch&amp;count=true&amp;size=middle"></iframe></li>
-  </ul>
 </div>
-<textarea id="input" spellcheck="false"></textarea>
 
-<button class="btn copy-button" style="display:none;" data-clipboard-action="cut" data-clipboard-target="#outputCtt">复制</button>
-<button class="btn convert-button">预览</button>
 
-<div id="output">
-  <div class="themes-config">
-    <div class="theme-wrapper">
-      <label>页面主题选择：</label><select class="page-theme"></select>
+<button class="btn copy-button"  data-clipboard-action="cut" data-clipboard-target="#outputCtt">复制</button>
+<div>
+  <div><textarea id="input" style="width:50%" spellcheck="false"></textarea></div>
+
+  <div id="output" style="margin-left:50%">
+    <div class="themes-config">
+      <div class="theme-wrapper">
+        <label>页面主题选择：</label><select class="page-theme"></select>
+      </div>
+      <div class="theme-wrapper">
+        <label>代码主题选择：</label><select class="code-theme"></select>
+      </div>
     </div>
-    <div class="theme-wrapper">
-      <label>代码主题选择：</label><select class="code-theme"></select>
-    </div>
+    <div class="wrapper" id="outputCtt"></div>
   </div>
-  <div class="wrapper" id="outputCtt"></div>
 </div>
+
 
 <script>
 var _hmt = _hmt || [];

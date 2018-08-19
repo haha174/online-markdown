@@ -67,31 +67,21 @@ var OnlineMarkdown = {
       $('#input').val(data);
     });
   },
-  bindEvt: function() {
-    var self = this;
-    $('#input').on('input keydown paste', self.updateOutput);
-    var $copy = $('.copy-button');
-    var $convert = $('.convert-button');
-    $convert.on('click', function() {
-      var $this = $(this);
-      if (self.currentState === 'preview') {
+   bindEvt: function() {
+     var self = this;
+     $('#input').on('input keydown paste', self.updateOutput);
+     var $copy = $('.copy-button');
+     var $convert = $('.convert-button');
+     $convert.on('click', function() {
+       var $this = $(this);
         self.currentState = 'edit';
-        $this.text('预览');
-        $copy.hide();
-        $('#input').fadeIn();
-        $('#output').hide();
-      } else {
-        self.currentState = 'preview';
-        $this.text('编辑');
-        $copy.show();
-        $('#input').fadeOut();
-        $('#output').show();
-      }
-    });
-    if (params.preview) {
-      $convert.trigger('click');
-    }
-  },
+         $this.text('预览');
+         $copy.show();
+         $('#input').show();
+         $('#output').show();
+     });
+    $convert.trigger('click');
+   },
 
   updateOutput: function () {
     var val = converter.makeHtml($('#input').val());
